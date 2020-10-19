@@ -11,6 +11,10 @@
 ## 如何使用
 
 使用 --path 参数指定知识图谱的三元组数据的路径
-
-
-
+go build
+生成rdf2neo4j或rdf2neo4j.exe
+rdf2neo4j --path ownthink_v2.csv
+生成
+vertex.csv 存放顶点
+edge.csv   存放边
+之后可以使用 neo4jadmin import进行导入了
