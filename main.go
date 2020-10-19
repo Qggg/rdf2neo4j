@@ -52,7 +52,7 @@ func Read(rdfPath string) error {
     eWriter := csv.NewWriter(bufio.NewWriter(eFile))
 
     vertexHeadline := []string{":ID", "name", ":LABEL"}
-    edgeHeadline := []string{":START_ID", "name", "END_ID", ":TYPE"}
+    edgeHeadline := []string{":START_ID", "name", ":END_ID", ":TYPE"}
     vWriter.Write(vertexHeadline)
     eWriter.Write(edgeHeadline)
     defer vWriter.Flush()
