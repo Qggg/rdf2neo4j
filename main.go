@@ -134,7 +134,8 @@ func Read(rdfPath string) error {
         eRecord[0] = lVRecord[0]
         eRecord[2] = rVRecord[0]
         eRecord[1] = line[1]
-        eRecord[3] = line[1]
+        // eRecord[3] = line[1]
+        eRecord[3] = "RELATIONSHIP"
         eWriter.Write(eRecord)
     }
 
